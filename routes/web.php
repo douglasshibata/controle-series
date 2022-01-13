@@ -10,14 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-use Illuminate\Routing\Route;
-
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/series', 'SeriesController@index');
+Route::get('/series/criar', 'SeriesController@create');
+Route::get('/',function(){
+    return "Olá";
 });
-
-Route::get('/ola',function(){
-    return "olá";
-});
-
