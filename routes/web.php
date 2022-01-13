@@ -12,6 +12,4 @@
 */
 Route::get('/series', 'SeriesController@index');
 Route::get('/series/criar', 'SeriesController@create');
-Route::get('/',function(){
-    return "Olá";
-});
+Route::post('/series/criar', 'SeriesController@store');
